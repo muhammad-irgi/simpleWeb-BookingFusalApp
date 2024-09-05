@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&family=Montserrat&family=Mulish:wght@200;300&family=Poppins:wght@300;400&family=Press+Start+2P&family=Roboto&family=Silkscreen&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: #f5f3f3;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.column .text{
+    font-size: 14px;
+    display: flex;
+}
+
+.text a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.item-card{
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto auto;    
+}   
+
+a{
+    text-decoration: none;
+}
+
+.flex a{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.column{
+    padding: 4rem;
+}
+
+.column:last-child{
+    background-image: url('img/Carlos\ Espindola\ on\ Twitter.jpeg');
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.column:last-child:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, white, #ffffff82);
+    inset: 0;
+}
+
+*{
+    z-index: 1;
+}
+
+.column:last-child{
+    text-align: center;
+}
+
+.column:last-child h1{
+    font-size: 50px;
+}
+
+.column:last-child p{
+    margin-bottom: 20px;
+}
+
+h1{
+    margin-bottom: 9px;
+}
+
+.column:first-child{
+    margin-top: 20px;
+}
+
+.form-element{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    transition: box-shadow .2s;
+
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 0 2px blue;
+    }
+}
+
+input[type=checkbox]{
+    accent-color: blue;
+}
+
+form{
+    margin-top: 2rem;
+
+    &>*{
+        margin-top: 1rem;
+    }
+}
+
+.column:first-child button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15.5px;
+    font-weight: 600;
+    transition: all .3s;
+
+    &:active{
+        scale: .95;
+        background-color: darkblue;
+    }
+}
+
+.form-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding: 20px;
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+
+

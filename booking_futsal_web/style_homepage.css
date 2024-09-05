@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&family=Montserrat&family=Mulish:wght@200;300&family=Poppins:wght@300;400&family=Press+Start+2P&family=Roboto&family=Silkscreen&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+
+}
+
+li, a, button{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 30px;
+}
+
+.header1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav_links li a {
+    color: black;
+    font-size: 13px;
+}
+
+.logoBelanja{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.thumbnail{
+    background-image: url('img/atas.jpeg');
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 65px;
+    color: white;
+}
+
+.h2Class{
+    margin-top: 20px;
+}
+
+.buttonLengkapi{
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:active{
+    scale: .95;
+    }
+}
+
+.button__text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button__icon{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.jadwal{
+    background-color: #272727;
+    height: 80px;
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 100px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px;
+}           
+
+.container_tanggal{
+    margin-left: 20px;
+}
+
+.seminggu{
+    display: grid;
+    grid-template-columns: repeat(7, 3rem);
+    justify-content: flex-start;
+    padding: 10px;
+    color: #cfcfcf;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.date{
+    align-items: center;
+    justify-content: center;
+    margin-left: -4.2px;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25rem;
+    margin-top: -30px;
+    cursor: pointer;
+} 
+
+.cons{
+    margin-left: 100px;
+    width: 80%;
+}
+
+.info1{
+    display: flex;
+    margin-top: 35px;
+}
+
+.fotolap{
+    background-image: url('img/fotolap1.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fotolap2{
+    background-image: url('img/fotolap2.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2000px;
+    height: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.deskripsi{
+    margin-left: 30px;
+}
+
+.info2{
+    display: flex;
+    margin-top: 40px;
+}
+
+.lap2{
+    width: 307px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.batas2{
+    border-right: 1px solid rgb(227, 227, 227);
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+.deskripsi2{
+    margin-left: 30px;
+}
+
+.infolapangan{
+    font-size: 14px;
+}
+
+.futsal{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.position{
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.icon_posisi{
+    margin-left: 4px;
+}
+
+.interlock{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.icon_menu{
+    margin-left: 3px;
+}
+
+.btnketerangan{
+    padding: 13px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(184, 182, 182);
+    color: white;
+    font-weight: bold;
+}
+
+.batas3{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-top: 10px; 
+    margin-top: 30px;
+}
+
+.flex_waktu1{
+    display: flex;
+    font-size: 12px;
+}
+
+.waktu1, .waktu2, .waktu3, .waktu4, .waktu5, .waktu6{
+    width: 105px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+
+.waktu2, .waktu3, .waktu4, .waktu5, .waktu6{
+    margin-left: 10px;
+}
+
+.btnketerangan2{
+    padding: 13px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(184, 182, 182);
+    color: white;
+    font-weight: bold;
+}
+
+.flex_waktu2{
+    display: flex;
+    font-size: 12px;
+}
+
+.waktu_bag, .waktu_bag2{
+    width: 105px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+.waktu_bag2{
+    margin-left: 10px;
+}

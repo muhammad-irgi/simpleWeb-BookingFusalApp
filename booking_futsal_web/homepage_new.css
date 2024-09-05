@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&family=Montserrat&family=Mulish:wght@200;300&family=Poppins:wght@300;400&family=Press+Start+2P&family=Roboto&family=Silkscreen&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+
+}
+
+li, a, button{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 30px;
+    margin-right: auto;
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_links li {
+    margin-right: 15px;
+}
+
+.nav_links li a{
+    color: black;
+    font-size: 12px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 16px;
+    color: black;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logoBelanja{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.thumbnail{
+    background-image: url('img/bannerBG.png');
+    background-position: -12px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 65px;
+    color: white;
+}
+
+.h2Class{
+    margin-top: 20px;
+}
+
+.buttonLengkapi{
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #FFA33C;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:active{
+    scale: .95;
+    }
+}
+
+.button__text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button__icon{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.btn_logout{
+    border: none;
+    padding: 4px;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: #FFA33C;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn_logout:active {
+    transform: scale(0.95);
+}
+
+.container_calendar{
+    background-color: #e96411;
+    width: 100%;
+}
+
+.item_date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_date input[type="date"] {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn_cek{
+    border: none;
+    padding: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: #FFA33C;
+    color: white;
+    cursor: pointer;
+}
+
+.container_calendar .harga_lapangan {
+    width: 450px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: contents;
+    transform: translate(-50%, -50%);
+}
+
+.container_calendar .harga_lapangan img {
+    width: 100%;
+    height: auto;
+    padding: 0 30%;
+    justify-content: center;
+}
+
+.containerLap{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 85%;
+}
+
+.info1{
+    display: flex;
+    margin-top: 35px;
+}
+
+.fotolap .lapangan1{
+    width: 20rem; 
+    height: 200px;
+    border-radius: 10px;
+}
+
+.fotolap2 .lapangan2{
+    width: 20rem; 
+    height: 200px;
+    border-radius: 10px;
+}
+
+.deskripsi{
+    margin-left: 30px;
+}
+
+.batas2{
+    border-right: 1px solid rgb(227, 227, 227);
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+.deskripsi2{
+    margin-left: 30px;
+}
+
+.infolapangan{
+    font-size: 14px;
+}
+
+.futsal{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.position{
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.icon_posisi{
+    margin-left: 4px;
+}
+
+.interlock{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.icon_menu{
+    margin-left: 3px;
+}
+
+.btnketerangan{
+    text-align: center;
+    width: 170px;
+    padding: 13px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #E47127;
+    cursor: pointer;
+    color: white;
+}
+
+.batas3{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-top: 10px; 
+    margin-top: 30px;
+}
+
+.flex_waktu1{
+    display: flex;
+    font-size: 12px;
+}
+
+.btnketerangan2{
+    padding: 13px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #E47127;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.flex_waktu2{
+    display: flex;
+    font-size: 12px;
+}
+
+.waktu_bag, .waktu_bag2{
+    width: 105px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+.waktu_bag2{
+    margin-left: 10px;
+}
+
+
+/* BAGIAN MENGATUR WAKTU START */
+.container_utama_waktu{
+    display: none;
+    margin-top: 20px;
+}
+
+.container_waktu .setPosisi_waktu{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 75px;
+    float: left;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.setPosisi_waktu .btn_jadwal{
+    border: none;
+    background-color: white;
+    font-size: 13px;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.setPosisi_waktu .btn_jadwal:hover{
+    border: none;
+    color: white;
+    background-color: #E47127;
+    font-size: 13px;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.setPosisi_waktu p{
+    font-size: 12px;
+    margin-left: 25px;
+}
+/* BAGIAN MENGATUR WAKTU END */
+
+@media only screen and (max-width: 768px) {
+    .container_calendar,
+    .containerLap,
+    .futsal,
+    .position,
+    .interlock,
+    .info1 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .info1{
+        display: grid;
+    }
+
+    .fotolap .lapangan1,
+    .fotolap2 .lapangan2 {
+        width: 70%;
+        height: 200px;
+        margin-left: 15%;
+    }
+
+    .deskripsi,
+    .deskripsi2 {
+        margin-left: 0;
+        margin-top: 15px;
+        margin-left: 15%;
+    }
+
+    .infolapangan {
+    visibility: hidden;
+    }   
+
+    .futsal{
+        margin-top: -10px;
+    }
+
+    .btnketerangan,
+    .btnketerangan2 {
+        font-size: 13px;
+        width: 130px;
+        margin-top: 15px;
+    }
+
+    .waktu_bag,
+    .waktu_bag2 {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* toggle */
+.deskripsi.show1 .container_utama_waktu {
+    display: block;
+}
+
+.deskripsi.show2 .container_utama_waktu {
+    display: block;
+}
+
+.deskripsi.show3 .container_utama_waktu {
+    display: block;
+}
+
+.deskripsi_pesanan {
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    right: -500px;
+    transition: right 0.3s ease;
+    z-index: 2;
+}
+
+.icon_exit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon_exit h2 {
+    margin: 0 auto;
+}
+
+.deskripsi_pesanan .row {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    background-color: #E47127;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.deskripsi_pesanan .row p {
+    margin: 10px;
+}
+
+.show-sidebar {
+    right: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Warna semi-hitam dengan opacity 0.5 */
+    display: none;
+    z-index: 1; /* Pastikan overlay berada di atas konten lainnya */
+}
+
+.show-overlay {
+    display: block;
+}

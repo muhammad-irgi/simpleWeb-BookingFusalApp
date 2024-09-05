@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@300;400&family=Montserrat&family=Mulish:wght@200;300&family=Poppins:wght@300;400&family=Press+Start+2P&family=Roboto&family=Silkscreen&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 60px;
+    margin-left: 25px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.navigation{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: #e99311;
+}
+
+.navigation ul{
+    position: absolute;
+    padding: 15px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li a .update{
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 14.5px;
+    color: white;
+}
+
+.navigation ul li a .delete{
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 17px;
+    color: white;
+}
+
+.text_decoration{
+    text-decoration: none;
+}
+
+.navigation ul li .icon i{
+    margin-top: 20px;
+}
+
+.navigation ul li .icon_up i{
+    margin-top: 20px;
+    margin-left: -2px;
+}
+
+.log_out{
+    position: absolute;
+    bottom: -550px;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.log_out:active {
+    transform: scale(0.95);
+}
+
+.log_out::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dedddd;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.log_out:active::before {
+    opacity: 1;
+}
+
+.textButton a{
+    color: black;
+    text-decoration: none;
+}
+
+/* MAIN */
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search input{
+    width: 70%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 38px;
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+    transition: border-color .2s;
+
+    &:focus{
+        border: 1px solid black; 
+    }
+}
+
+.search i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.btn_cari{
+    padding: 8px;
+    margin-left: 10px;
+    width: 50px;
+    border: none;
+    font-size: 13px;
+    color: white;
+    border-radius: 5px;
+    background-color: #e99311;
+}
+
+.tabelList {
+    background-color: #ececec;
+    border-radius: 10px;
+    margin-left: -80px;
+    margin-right: 10px;
+}
+
+.judul_table {
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+table {
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+}
+
+table, tr, td {
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+tr, td {
+    margin: 100px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+thead tr {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.p_menampilkan_jadwal{
+    margin-left: 10px;
+}
